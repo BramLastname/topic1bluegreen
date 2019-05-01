@@ -1,0 +1,24 @@
+//Apparently my previous exercises were all uploaded as private
+//So I suspect you were unable to view them
+//Aditionally my email has been acting up lately,
+//So if you sent an email about it 
+//You should know I haven't received a single email in the last week
+//Even though I get at least a dozen a day
+
+//Press UP ARROW to initiate
+void draw() {
+  if (keyPressed == true) {              //starting condition
+    if (key == CODED) {                 //starting condition
+      if (keyCode == UP) {             //starting condition
+        int total=0;
+        //int minimum = 5
+        //int maximum = 1000
+        //int stepsize = 5
+        for (int i=5; i<1000; i=i+5) { //selects a value
+          total=total+i;              //adds everything up
+        }
+        println(total);             //prints the total value
+      }
+    }
+  }
+}
