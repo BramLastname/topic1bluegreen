@@ -1,0 +1,25 @@
+//Press UP ARROW to count multiples of 5
+//Press DOWN ARROW to count multiples of 5 and 3
+
+void draw() {
+  if (keyPressed == true) {              //starting condition
+    if (key == CODED) {                 //starting condition
+    if (keyCode == UP) {             //starting condition
+        int total=0;
+        for (int i=5; i<1000; i=i+5) { //selects a value
+          total=total+i;              //adds everything up
+        }
+        println(total);             //prints the total value
+      }
+      else if (keyCode == DOWN) {             //starting condition
+        int total=0;
+        for (int i=3; i<1000; i=i+1) { //selects a value
+          if (i%3==0 || i%5==0){      //checks validity
+          total=total+i;              //adds valid values up
+          }
+        }
+        println(total);             //prints the total value
+      }
+    }
+  }
+}
