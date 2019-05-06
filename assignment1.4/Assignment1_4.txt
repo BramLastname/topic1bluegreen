@@ -1,0 +1,18 @@
+//Written by Bram M. Rouwhorst (s2107430 at University of Twente)
+//Press UP ARROW to initiate
+void draw() {
+  if (keyPressed == true) {              //starting condition
+    if (key == CODED) {                 //starting condition
+      if (keyCode == UP) {             //starting condition
+        int total=0;                  //resets counter
+        //var minimum = 5
+        //var maximum = 1000
+        //var stepsize = 5
+        for (int i=5; i<1000; i=i+5) { //selects a value
+          total=total+i;              //adds everything up
+        }
+        println(total);             //prints the total value
+      }
+    }
+  }
+}
